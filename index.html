@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="robots" content="all,index,follow" />
+
+	<title> OOM GEE SE WEBSITE </title>
+	<meta name="description" content="Create a sticky navigation bar that remains fixed to the top after scroll" />
+
+	<link rel="stylesheet" type="text/css" href="css/style.css" /> <!-- Main stylesheet /-->
+
+</head>
+
+<body>
+
+<section id="screen1">
+
+
+	<p>Scroll down</p>
+
+	<nav>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="forest.html"target="_blank">Profile</a></li>
+			<li><a href="#">Services</a></li>
+			<li><a href="gallery.html"target="_blank">Gallery</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</nav>
+
+</section>
+
+<section id="screen2"></section>
+
+
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<script>
+   $(document).ready(function(){
+	   $(window).bind('scroll', function() {
+	   var navHeight = $( window ).height() - 70;
+			 if ($(window).scrollTop() > navHeight) {
+				 $('nav').addClass('none');
+			 }
+			 else {
+				 $('nav').removeClass('none');
+			 }
+		});
+	});
+</script>
+
+
+
+<div class="footer">
+  <p>Copy write 2019 All rights reserved Supported by Münich                         Privacy Policy</p>
+
+</div>
+
+
+</body>
+</html>

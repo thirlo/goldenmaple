@@ -1,0 +1,115 @@
+
+* {margin: 0; padding: 0;}
+
+a {text-decoration: none;}
+
+/* This class is added on scroll */
+.fixed {
+	position: fixed;
+	top: 0;
+	height: 70px;
+	z-index: 1;
+}
+
+body {
+	color: #fff;
+	font-family: 'cinzel';
+	font-size: 18px;
+	text-align: center;
+}
+
+/* Font Face Settings */
+@font-face {
+    font-family: 'open-sans-bold';
+	src: url('../fonts/open-sans/OpenSans-Bold.eot');
+    src: url('../fonts/open-sans/OpenSans-Bold.eot?iefix') format('embedded-opentype'),
+		 url('../fonts/open-sans/OpenSans-Bold.ttf');
+    font-weight: normal;
+}
+
+/* Navigation Settings */
+nav {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 70px;
+	background: black;
+}
+
+nav li {
+	display: inline-block;
+	padding: 24px 10px;
+}
+
+nav li a {
+	color: green;
+	text-transform: uppercase;
+}
+
+section {
+	height: 100vh;
+}
+
+/* Screens Settings */
+#screen1 {
+	background: black;
+	background-image: url(forest.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+
+}
+
+#screen1 p {
+	padding-top: 300px;
+	color: black;
+}
+
+#screen2 {
+	background: black;
+	background-image: url(goldenstandard.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto;
+
+
+}
+a:link, a:visited {
+	background-color: grey;
+	color: white;
+	border: 2px solid ;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	opacity: 0.4;
+}
+
+a:hover, a:active {
+	background-color: yellow;
+	color: black;
+}
+
+@media only screen and (max-width: 520px) {
+
+	nav li {
+		padding: 24px 4px;
+	}
+
+	nav li a {
+		font-size: 14px;
+	}
+
+}
+.footer {
+	font
+	font-size: 10px;
+   position:relative;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: grey;
+   color: white;
+   text-align: center;
+}
